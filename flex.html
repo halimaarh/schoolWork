@@ -1,0 +1,106 @@
+<html>
+   <head>
+      <title>Flex</title>
+      <style>
+         *{
+            margin: 0;
+            padding: 0;
+         }
+         #parentdiv{
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+         }
+         #thirddiv li{
+            list-style: none;
+            display: inline-block;
+            margin-right: 20px;
+         }
+         a{
+            text-decoration: none;
+         }
+         #thirddiv li a{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+         }
+         #firstdiv a{
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+         }
+         button{
+            background-color: pink;
+            padding: 10px;
+            border-radius: 10px;
+         }
+         button a{
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 10px;
+         }
+         ul#navlinks a:hover{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+         }
+         #header{
+            width: 100%;
+            height: 450px; 
+            background-image:url(./image/pexels-photo-2089698.jpeg); 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+         #overlay{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 450px;
+            background-color: rgb(0,0,0,0.4);
+         }
+         h1{
+          color: #ffffff;
+          font-weight: bold;
+          font-size: 30px;
+         }
+   
+      </style>
+   </head>
+   <body>
+      <nav id="parentdiv">
+         <div id="firstdiv">
+            <a href="#">HTMLCLASS</a>
+         </div>
+      
+         <div class="innerdiv" id="thirddiv">
+            <ul id="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="file:///C:/Users/Ameerah/Desktop/HTML5/dashboard.html"Target="_blank">Dashboard</a></li>
+            <button><a href="#">Signup</a></button>
+            <button><a href="#">Signin</a></button>
+            </ul>
+            
+         </div>
+      </nav>
+      <header id="header">
+         <!--<button onclick='clickme()'>Test</button>
+         <script>
+            function clickme(){
+            window.alert("Welcome to HTML class");
+            }
+         </script>-->
+         <div id="overlay">
+            <h1>WELCOME TO NIIT</h1>
+         </div>
+      </header>
+
+   </body>
+</html>

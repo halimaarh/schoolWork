@@ -1,0 +1,55 @@
+<html>
+   <head>
+      <title>ADD CSS TO HTML</title>
+      <link rel="stylesheet" href="addingcsstohtml.css"/>
+      /*Attributes selector: Target elements based on their ttributes.*/
+      a[href^="https://"{
+         color: blue;
+      }
+
+      /*Psuedo class selector: Target elements based on their state or position,such as when they are clicked or focused.*/
+      button:hover{
+         background-color: blue;
+      }
+
+      /*Psuedo elements: Target specific parts of an element,such as inserting content before or after an element.*/
+      p:first-line{
+         font-weight: bold;
+      }
+
+      /*Descendant selector: Targets elements that are descendants of another specified element.*/
+      ul li{
+         list-style-type: square;
+      }
+
+      /*Child selector: Targets elements that are direct children of another specified element.*/
+      nav > ul{
+         margin: 0;
+         padding: 0;
+      }
+
+   </head>
+   <body>
+      <!--let's start with inline styling-->
+      <!--h1 style="font-size: 50px;">HTML TAG</h1-->
+      <!--div class="sidebar" id="difsidebar"-->
+      <div>
+         <h1 id="firstheading">Welcome</h1>
+         <ul class="navlist">
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>CONTACT US</li>
+            <li>GALLERY</li>
+         </ul>
+         <p>blablablablabla</p>
+      </div>
+      <div id="navigator">
+         <p>ehnnnnnnnnnnnnnnnnnnnn</p>
+         <div>
+            <p>yennnnnnnnnnnnnnnnn</p>
+         </div>
+      </div>
+      <div class="sidebar"></div>
+
+   </body>
+</html>

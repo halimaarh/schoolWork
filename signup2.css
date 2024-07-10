@@ -1,0 +1,48 @@
+.parentdiv{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.5fr 0.8fr 10fr 0.5fr;
+   height: 100vh;
+}
+#header{
+   background-color: black;
+}
+#nav{
+   background-color: white;
+}
+#main{
+   background-color: gray;
+}
+#footer{
+   background-color: black;
+}
+#form{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+#test{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.forms{
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+   grid-template-rows: 2fr 2fr 2fr 2fr;
+}
+label{
+   font-weight: bold;
+   font-size: 14px;
+}
+.one{
+   display: flex;
+   flex-direction: column;
+   padding-right: 20px;
+   padding-left: 20px;
+}
+.two{
+   text-align: center;
+   grid-column: 1/-1;
+}

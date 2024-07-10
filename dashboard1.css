@@ -1,0 +1,48 @@
+.grid-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 0.8fr 3fr;
+   grid-template-areas: 
+   "sidebar header header header"
+   "sidebar main main main";
+   height: 100vh;
+}
+#header{
+   background-color: aqua;
+   grid-area: header;
+
+}
+#sidebar{
+   background-color: cadetblue;
+   grid-area: sidebar;
+
+}
+#main{
+   background-color: #1B232E;
+   grid-area: main;
+}
+#maincontent{
+   padding: 10px;
+}
+#cardparent{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.card{
+   height: 50px;
+   width: 22%;
+
+}
+#firstcard{
+   background-color: bisque;
+}
+#secondcard{
+   background-color: palevioletred;
+}
+#thirdcard{
+   background-color: burlywood;
+}
+#fourthcard{
+   background-color: violet;
+}

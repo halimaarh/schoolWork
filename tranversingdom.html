@@ -1,0 +1,56 @@
+<html>
+    <head>
+<title>Transversing the DOM</title>
+<style>
+    .change{
+        font-size: 30px;
+        font-weight: 500;
+        color: blue;
+    }
+    #changeSize{
+        width : 200px;
+        height : 100px;
+        content: url(./image/image3.jpg);
+
+    }
+</style>
+    </head>
+    <body>
+<div>
+    <img id="third"/>
+
+    <ul id="list-item">
+        <li id="firstitem">First</li>
+        <li id="seconditem">Second</li>
+        <li id="thirditem">Third</li>
+        <li id="fourthitem">Fourth</li>
+    </ul>
+</div>
+<div>
+    <p>Thank you</p></div>
+<script>
+    var list = document.querySelector("#firstitem");
+    var parent = list.parentNode;
+    console.log(list);
+    // var grandparent = parent.parentNode;
+    // console.log(grandparent);
+    // var allchild = list.children;
+    // for(var i =0; i < allchild.length; i++){
+    //     console.log(allchild[i]);
+    // }
+    // var previous = document.getElementbyId("seconditem");
+    // console.log(testprevious.nextElementSibling);
+    // var testprevious = document.getElementById("firstitem");
+    // testprevious.style.fontSize="100px";
+    // testprevious.style.colour="#00ff00";
+    // testprevious.style.fontWeight=600;
+    // thirditem.classList.add("change");
+    // var imgnode = document.getElementById("third");
+    // // third.setAttribute("src","./image/image3.jpg");
+    // // third.setAttribute("alt","background");
+    // third.setAttribute("class","third");
+</script>
+
+
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+   <head>
+      <style>
+         .parent{
+            background-color: red;
+            padding: 10px;
+            position: absolute;
+            right: 10px;
+         }
+         .bar{
+            background-color: blue;
+            width: 20px;
+            height: 2px;
+            margin-top: 3px;
+         }
+         /* .close{
+            display: none;
+         } */
+         nav.active{
+            display: block;
+         }
+         nav{
+            display: none;
+         }
+      </style>
+   </head>
+   <body>
+         <div class="parent">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+         </div>
+         <nav id="close" class="close">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+         <script>
+            var parent = document.querySelector(".parent");
+            var navclose = document.querySelector("#close");
+            parent.addEventListener("click", ()=>{
+               nav.classList.toggle("active")
+            })
+            // function toggle(e){
+            //    console.log("close");
+            //    close.classlist.toggle("close");
+            // }
+
+
+            // function toggles(e){
+            //    if(navclose.classList.contains("close")){
+            //       navclose.classList.remove("close")
+            //    }else{
+            //       navclose.classList.add("close")
+            //    }
+            // }
+
+         </script>
+   </body>
+</html>

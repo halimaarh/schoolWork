@@ -1,0 +1,49 @@
+<html>
+   <head>
+      <title>layout</title>
+      <style>
+      *{
+         margin: 0px;
+      }
+      #container{
+         background-color: white;
+         padding: 0px;
+      }
+      #firstdiv{
+         background-color: yellow;
+         border: solid black 2px;
+         height: 300px;
+      
+      }
+      .seconddiv{
+         display: flex;
+         flex-direction: row;
+      }
+      #nav1{
+         background-color:red;
+         border: solid black 1px;
+         width: 50%;
+         height: 400px;
+      }
+      #nav2{
+         background-color:blue; 
+         border: solid black 1px;
+         width: 50%;
+         height: 400px;
+      }
+      </style>
+   </head>
+      <body>
+      <div id="container">
+         <div>
+            <div id="firstdiv"></div>
+         </div>
+
+         <div class="seconddiv">
+            <div id="nav1"></div>
+            <div id="nav2"></div>
+         </div>
+      </div>
+        
+   </body>
+</html>

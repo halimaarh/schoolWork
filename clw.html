@@ -1,0 +1,62 @@
+<html>
+   <head>
+    <title>NAV1</title>
+   </head>
+   <style>
+      *{
+         border: 0px;
+
+      }
+      #parentdiv{
+            background-color: red;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 20px;
+         }
+         #thirddiv li{
+            list-style: none;
+            display: inline-block;
+            margin-right: 20px;
+         }
+         a{
+            text-decoration: none;
+         }
+         #thirddiv li a{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+         }
+         #firstdiv a{
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+         }
+         button{
+            background-color: black;
+            padding: 10px;
+            border-radius: 10px;
+         }
+         button a{
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 10px;
+         }
+
+   </style>
+   <body>
+      <nav id="parentdiv">
+         <div class="innerdiv" id="thirddiv">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <button><a href="#">Signup</a></button>
+            <button><a href="#">Signin</a></button>
+            </ul>
+         </div>
+      </nav>
+   </body>
+</html>
